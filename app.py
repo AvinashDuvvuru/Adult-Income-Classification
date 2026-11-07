@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, roc_auc_score, precision_score, reca
     confusion_matrix, classification_report
 
 st.set_page_config(page_title="Adult Income ML App", layout="wide")
-st.title("Income Classification Models App (Adult Dataset)")
+st.title("Income Classification Models App")
 st.markdown("Upload the `test_data.csv` file generated during training to evaluate the models.")
 
 # --- SIDEBAR CONTROLS ---
@@ -76,7 +76,10 @@ if uploaded_file is not None:
         ax.set_ylabel('True Label')
         st.pyplot(fig)
 
-    with colB:
-        st.markdown("**Classification Report**")
-        report = classification_report(y_true, y_pred)
-        st.text(report)
+        with colB:
+            st.markdown("**Classification Report**")
+            report_dict = classification_report(y_true, y_pred, target_names=['<=50K', '>50K'], output_dict=True)
+            report_df = pd.DataFrame(report_dict).transpose()
+            st.dataframe(report_df.style.format(precision=3))
+else:
+    st.info("Awaiting CSV file upload in the sidebar to display metrics.")
