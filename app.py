@@ -37,7 +37,7 @@ if uploaded_file is not None:
         'Support Vector Machine': 'support_vector_machine.pkl'
     }
 
-    # Load model
+    # Load model ####
     model = joblib.load(f"model/{file_map[model_name]}")
 
     # Predictions
