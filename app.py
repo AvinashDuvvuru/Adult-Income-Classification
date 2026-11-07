@@ -10,8 +10,11 @@ st.set_page_config(page_title="Adult Income ML App", layout="wide")
 st.title("Income Classification Models App (Adult Dataset)")
 st.markdown("Upload the `test_data.csv` file generated during training to evaluate the models.")
 
+# --- SIDEBAR CONTROLS ---
+st.sidebar.header("Configuration")
+
 # 1. Dataset Upload
-uploaded_file = st.file_uploader("Upload test_data.csv", type=["csv"])
+uploaded_file = st.sidebar.file_uploader("Upload test_data.csv", type=["csv"])
 
 if uploaded_file is not None:
     # Reading the data
@@ -23,7 +26,7 @@ if uploaded_file is not None:
     y_true = df['income_target']
 
     # 2. Model Selection
-    model_name = st.selectbox(
+    model_name = st.sidebar.selectbox(
         "Select Machine Learning Model",
         ['Logistic Regression', 'Decision Tree', 'KNN', 'Naive Bayes', 'Support Vector Machine']
     )
