@@ -4,7 +4,7 @@
 The objective of this assignment is to implement five different machine learning classification models to predict whether an individual's income exceeds $50K/yr based on census data. The project involves end-to-end ML deployment including data preprocessing, model training, evaluation, and creating an interactive web application using Streamlit for live inference.
 
 ## b. Dataset Description
-* **Dataset Name:** Adult Income Dataset (Census Income)
+* **Dataset Name:** Adult Census Income
 * **Source:** Kaggle - Adult Census Income
 * **Instances:** 32,561 rows (subset used for deployment optimization)
 * **Features:** 14 attributes (including age, workclass, education, marital.status, occupation, race, sex, capital.gain/loss, hours.per.week, native.country)
