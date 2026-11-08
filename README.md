@@ -19,9 +19,9 @@ https://github.com/AvinashDuvvuru/Adult-Income-Classification
 | :--- |:---------|:-------|:----------|:-------|:-------|:-------|
 | **Logistic Regression** | 0.858    | 0.9096 | 0.7150    | 0.6538 | 0.6830 | 0.5928 |
 | **Decision Tree** | 0.817    | 0.7633 | 0.5985    | 0.6624 | 0.6288 | 0.5089 |
-| **KNN** | 0.804    | 08291  | 0.5792    | 0.5940 | 0.5865 | 0.4581 |
+| **KNN** | 0.804    | 0.8291 | 0.5792    | 0.5940 | 0.5865 | 0.4581 |
 | **Naive Bayes** | 0.294    | 0.5585 | 0.2473    | 0.9872 | 0.3955 | 0.1184 |
-| **Support Vector Machine** | 0.847    | 0.9040 | 0.7213    | 0.5641 | 06331  | 0.5448 |
+| **Support Vector Machine** | 0.847    | 0.9040 | 0.7213    | 0.5641 | 0.6331 | 0.5448 |
 
 ## e. Observations
 | ML Model Name | Observation about model performance                                                                                                                                                                                                                                        |
